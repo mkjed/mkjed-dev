@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     },
   },
   app: {
-    baseURL: "/mkjed-dev/",
+    baseURL: "/",
+    buildAssetsDir: "/_nuxt/",
     head: {
       title: "Michael Jedrzejczyk | Junior Web Developer",
       htmlAttrs: {

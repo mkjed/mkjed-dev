@@ -14,9 +14,9 @@ pages:
     paths:
       - .yarn/
   artifacts:
-    expire_in: 1 hour
     paths:
-      - .output/public
-  publish: .output/public
+      - .output/public/
+    expire_in: 1 hour
+  publish: .output/public/
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH

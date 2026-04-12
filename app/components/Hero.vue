@@ -1,0 +1,68 @@
+<template>
+  <section class="hero">
+    <div class="content">
+      <p>Junior Web Developer</p>
+      <h1>Michael<span>Jedrzejczyk</span></h1>
+      <p>
+        Web Developer spezialisiert auf moderne Web-Technologien. Ich entwickle
+        benutzerfreundliche, skalierbare Lösungen mit Fokus auf Performance und
+        Design.
+      </p>
+      <ul class="contacts">
+        <li>
+          <NuxtLink class="nLink" to="mailto:michael@mkjed.dev"
+            >contact</NuxtLink
+          >
+        </li>
+        <li>
+          <NuxtLink
+            class="nLink"
+            href="https://www.linkedin.com/in/mjlinked-in"
+            rel="noopener noreferrer"
+            >linkedin</NuxtLink
+          >
+        </li>
+      </ul>
+    </div>
+  </section>
+</template>
+
+<style scoped>
+.hero {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1rem 5rem 1rem;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.content > p {
+  color: var(--accent);
+  font-size: var(--paragraph-text);
+}
+
+.content > p:nth-of-type(2) {
+  max-width: 28rem;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  font-size: var(--hero-heading);
+}
+
+.contacts {
+  display: flex;
+  column-gap: 1rem;
+}
+</style>

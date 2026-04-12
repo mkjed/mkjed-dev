@@ -1,0 +1,63 @@
+:root {
+  --background: #f9f9f9;
+  --foreground: #0a0a0a;
+  --accent: #8b8a8a;
+
+  --hero-heading: clamp(3.5rem, 8vw, 5rem);
+  --paragraph-text: 0.9rem;
+  --link-text: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #f9f9f9;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  scrollbar-gutter: stable;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.nLink {
+  color: var(--foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: var(--link-text);
+  text-underline-position: under;
+  transition: color 0.3s ease-out;
+}
+
+.nLink:hover {
+  color: var(--accent);
+}
+
+hr {
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.2;
+  border: 0;
+}

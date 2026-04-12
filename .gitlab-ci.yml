@@ -1,0 +1,24 @@
+# Job name has to be `pages`. See https://docs.gitlab.com/ee/user/project/pages/#how-it-works
+
+pages:
+  image: node:lts
+  variables:
+    NUXT_APP_BASE_URL: /mkjed-dev/
+  before_script:
+    - corepack enable
+    - yarn install --immutable
+  script:
+    - yarn generate
+  cache:
+    key:
+      files:
+        - yarn.lock
+    paths:
+      - .yarn/
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - .output/public
+  publish: .output/public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH

@@ -9,12 +9,13 @@ export default defineNuxtConfig({
     },
   },
   app: {
+    baseURL: "/mkjed-dev/",
     head: {
       title: "Michael Jedrzejczyk | Junior Web Developer",
       htmlAttrs: {
         lang: "de",
       },
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [{ rel: "icon", type: "image/x-icon", href: "./favicon.ico" }],
     },
   },
   router: {

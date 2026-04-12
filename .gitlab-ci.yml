@@ -2,8 +2,6 @@
 
 pages:
   image: node:lts
-  variables:
-    NUXT_APP_BASE_URL: /mkjed-dev/
   before_script:
     - corepack enable
     - yarn install --immutable

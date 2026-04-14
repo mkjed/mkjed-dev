@@ -7,7 +7,14 @@
         <p>2025</p>
       </div>
     </div>
-    <div class="col-right"></div>
+    <div class="col-right">
+      <p>Ein kleines Tool zum speichern eigener Bewerbungen</p>
+      <div class="label-container">
+        <div class="label">
+          <p>React</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -17,12 +24,21 @@
   column-gap: 1rem;
 }
 
-.col-left > p {
-  color: var(--accent);
+.col-right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
-.project-name > p:nth-of-type(2) {
-  color: var(--accent);
+.label {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--accent);
+  font-size: var(--link-text);
+}
+
+.project-name > p:nth-of-type(1) {
+  color: var(--foreground);
 }
 
 .project-card {
@@ -33,6 +49,7 @@
   transition: background-color 0.3s ease-out;
   font-size: var(--paragraph-text);
   padding: 2rem 0.5rem;
+  color: var(--accent);
 }
 
 .project-card:hover {

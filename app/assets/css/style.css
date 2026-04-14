@@ -2,6 +2,7 @@
   --background: #f9f9f9;
   --foreground: #0a0a0a;
   --accent: #8b8a8a;
+  --hover-background: #f0f0f0;
 
   --hero-heading: clamp(3.5rem, 8vw, 5rem);
   --paragraph-text: 0.9rem;
@@ -12,6 +13,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #f9f9f9;
+    --hover-background: #131313;
   }
 }
 

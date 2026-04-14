@@ -11,7 +11,7 @@ const infoCardContent: InfoCard[] = [
   },
   {
     title: "FOCUS",
-    description: "React / Next.js / JavaScript / TypeScript",
+    description: "React / Next.js / Nuxt / JavaScript / TypeScript",
   },
   {
     title: "UI/UX",

@@ -5,6 +5,7 @@ defineProps<{
   year: number;
   description: string;
   labels: string[];
+  links: { url: string; title: string }[];
 }>();
 import Label from "./Label.vue";
 </script>
@@ -23,6 +24,17 @@ import Label from "./Label.vue";
       <div class="label-container">
         <Label v-for="label in labels" :key="label" :text="label" />
       </div>
+      <ul class="links">
+        <li v-for="link in links" :key="link.title">
+          <a
+            class="nLink"
+            :href="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ link.title }}</a
+          >
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -62,5 +74,11 @@ import Label from "./Label.vue";
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
 }
 </style>

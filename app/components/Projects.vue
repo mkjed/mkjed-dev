@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import ProjectCard from "./ProjectCard.vue";
 import { ref } from "vue";
-
 const projects = ref([
   {
     id: "01",
@@ -9,6 +8,16 @@ const projects = ref([
     year: 2025,
     description: "Ein kleines Tool zum speichern eigener Bewerbungen",
     labels: ["React", "JavaScript", "Tailwind", "Vite", "i18n"],
+    links: [
+      {
+        url: "https://gitlab.com/mkjed/bewerbase",
+        title: "code",
+      },
+      {
+        url: "https://bewerbase-f79fff.gitlab.io/",
+        title: "demo",
+      },
+    ],
   },
 ]);
 </script>

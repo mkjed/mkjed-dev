@@ -1,3 +1,17 @@
+<script setup lang="ts">
+import { ref } from "vue";
+const linkList = ref([
+  {
+    url: "mailto:michael@mkjed.dev",
+    title: "contact",
+  },
+  {
+    url: "https://www.linkedin.com/in/mjlinked-in",
+    title: "linkedin",
+  },
+]);
+</script>
+
 <template>
   <section class="hero">
     <div class="content">
@@ -10,17 +24,9 @@
       </p>
       <ul class="contacts">
         <li>
-          <NuxtLink class="nLink" to="mailto:michael@mkjed.dev"
-            >contact</NuxtLink
-          >
-        </li>
-        <li>
-          <NuxtLink
-            class="nLink"
-            href="https://www.linkedin.com/in/mjlinked-in"
-            rel="noopener noreferrer"
-            >linkedin</NuxtLink
-          >
+          <NuxtLink v-for="link in linkList" class="nLink" :to="link.url">{{
+            link.title
+          }}</NuxtLink>
         </li>
       </ul>
     </div>
@@ -61,7 +67,7 @@ h1 {
   font-size: var(--hero-heading);
 }
 
-.contacts {
+.contacts li {
   display: flex;
   column-gap: 1rem;
 }

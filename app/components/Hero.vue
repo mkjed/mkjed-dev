@@ -15,8 +15,8 @@ const linkList = ref([
 <template>
   <section class="hero">
     <div class="content">
-      <p>Junior Web Developer</p>
-      <h1>Michael<span>Jedrzejczyk</span></h1>
+      <h1>Junior Web Developer</h1>
+      <h2>Michael<span>Jedrzejczyk</span></h2>
       <p>
         Web Developer spezialisiert auf moderne Web-Technologien. Ich entwickle
         benutzerfreundliche, skalierbare Lösungen mit Fokus auf Performance und
@@ -65,6 +65,12 @@ const linkList = ref([
 }
 
 h1 {
+  font-size: var(--paragraph-text);
+  font-weight: 400;
+  color: var(--accent);
+}
+
+h2 {
   display: flex;
   flex-direction: column;
   line-height: 1;

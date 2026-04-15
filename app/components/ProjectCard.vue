@@ -1,18 +1,27 @@
+<script setup lang="ts">
+defineProps<{
+  id: string;
+  title: string;
+  year: number;
+  description: string;
+  labels: string[];
+}>();
+import Label from "./Label.vue";
+</script>
+
 <template>
   <div class="project-card">
     <div class="col-left">
-      <p>01</p>
+      <p>{{ id }}</p>
       <div class="project-name">
-        <p>Bewerbase</p>
-        <p>2025</p>
+        <p>{{ title }}</p>
+        <p>{{ year }}</p>
       </div>
     </div>
     <div class="col-right">
-      <p>Ein kleines Tool zum speichern eigener Bewerbungen</p>
+      <p>{{ description }}</p>
       <div class="label-container">
-        <div class="label">
-          <p>React</p>
-        </div>
+        <Label v-for="label in labels" :key="label" :text="label" />
       </div>
     </div>
   </div>
@@ -28,13 +37,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-}
-
-.label {
-  display: inline-block;
-  padding: 0.2rem 0.5rem;
-  border: 1px solid var(--accent);
-  font-size: var(--link-text);
 }
 
 .project-name > p:nth-of-type(1) {
@@ -54,5 +56,11 @@
 
 .project-card:hover {
   background-color: var(--hover-background);
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
 }
 </style>

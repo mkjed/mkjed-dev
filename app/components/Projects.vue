@@ -1,5 +1,16 @@
 <script setup lang="ts">
 import ProjectCard from "./ProjectCard.vue";
+import { ref } from "vue";
+
+const projects = ref([
+  {
+    id: "01",
+    title: "Bewerbase",
+    year: 2025,
+    description: "Ein kleines Tool zum speichern eigener Bewerbungen",
+    labels: ["React", "JavaScript", "Tailwind", "Vite", "i18n"],
+  },
+]);
 </script>
 
 <template>
@@ -7,7 +18,12 @@ import ProjectCard from "./ProjectCard.vue";
     <div class="content">
       <p class="section-title">02 / Projects</p>
       <div class="projects-container">
-        <ProjectCard />
+        <ProjectCard
+          v-for="project in projects"
+          :key="project.id"
+          v-bind="project"
+        >
+        </ProjectCard>
       </div>
     </div>
   </section>

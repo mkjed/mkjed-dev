@@ -23,10 +23,14 @@ const linkList = ref([
         Design.
       </p>
       <ul class="contacts">
-        <li>
-          <NuxtLink v-for="link in linkList" class="nLink" :to="link.url">{{
-            link.title
-          }}</NuxtLink>
+        <li v-for="link in linkList">
+          <a
+            class="nLink"
+            :href="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ link.title }}</a
+          >
         </li>
       </ul>
     </div>
@@ -67,7 +71,7 @@ h1 {
   font-size: var(--hero-heading);
 }
 
-.contacts li {
+.contacts {
   display: flex;
   column-gap: 1rem;
 }

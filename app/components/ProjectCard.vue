@@ -81,4 +81,11 @@ import Label from "./Label.vue";
   align-items: center;
   column-gap: 1rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .project-card {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
 </style>

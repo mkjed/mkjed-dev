@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/",
     head: {
-      title: "Michael Jedrzejczyk | Junior Web Developer",
+      title: "Michael Jedrzejczyk | Junior Frontend Developer",
       htmlAttrs: {
         lang: "de",
       },

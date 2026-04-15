@@ -4,8 +4,8 @@ import Header from "./components/Header.vue";
 import Hero from "./components/Hero.vue";
 import Projects from "./components/Projects.vue";
 useSeoMeta({
-  title: "Michael Jedrzejczyk | Junior Web Developer",
-  ogTitle: "Michael Jedrzejczyk | Junior Web Developer",
+  title: "Michael Jedrzejczyk | Junior Frontend Developer",
+  ogTitle: "Michael Jedrzejczyk | Junior Frontend Developer",
   description:
     "Portfolio von Michael, Junior Frontend Developer. Fokus auf moderne Webentwicklung. Schau dir meine Projekte und Skills an.",
   ogDescription:

@@ -31,8 +31,7 @@ const projects = ref([
           v-for="project in projects"
           :key="project.id"
           v-bind="project"
-        >
-        </ProjectCard>
+        />
       </div>
     </div>
   </section>

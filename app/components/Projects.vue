@@ -5,7 +5,7 @@ const projects = ref([
   {
     id: "01",
     title: "Bewerbase",
-    year: 2025,
+    year: 2026,
     description: "Ein kleines Tool zum speichern eigener Bewerbungen",
     labels: ["React", "JavaScript", "Tailwind", "Vite", "i18n"],
     links: [

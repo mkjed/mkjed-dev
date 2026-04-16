@@ -1,7 +1,7 @@
 # Job name has to be `pages`. See https://docs.gitlab.com/ee/user/project/pages/#how-it-works
 
 pages:
-  image: node:lts
+  image: node:lts-alpine
   before_script:
     - corepack enable
     - yarn install --immutable

@@ -13,7 +13,7 @@ const linkList = ref([
 </script>
 
 <template>
-  <section class="hero">
+  <section class="hero" id="hero">
     <Transition name="fade" appear>
       <div class="content">
         <h1>Junior Web Developer</h1>
@@ -47,6 +47,8 @@ const linkList = ref([
   justify-content: flex-end;
   align-items: center;
   padding: 0 1rem 5rem 1rem;
+  border-bottom: solid var(--border);
+  border-width: 0 0 1px 0;
 }
 
 .content {

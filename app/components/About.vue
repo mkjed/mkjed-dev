@@ -48,6 +48,8 @@ const infoCardContent: InfoCard[] = [
   display: flex;
   justify-content: center;
   padding: 5rem 1rem;
+  border: solid var(--border);
+  border-width: 0 0 1px 0;
 }
 .content {
   width: 100%;

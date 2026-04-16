@@ -19,7 +19,9 @@ const navLinks: Links[] = [
 <template>
   <header class="main-header">
     <nav class="navbar">
-      <NuxtLink class="nLink" to="/" aria-label="Home">mkjed</NuxtLink>
+      <NuxtLink class="nLink" to="#hero" aria-label="Home" external
+        >mkjed</NuxtLink
+      >
       <ul class="navi">
         <li v-for="link in navLinks" :key="link.title">
           <NuxtLink class="nLink" :to="link.url" external>{{

@@ -3,6 +3,7 @@
   --foreground: #0a0a0a;
   --accent: #8b8a8a;
   --hover-background: #f0f0f0;
+  --border: rgba(139, 138, 138, 0.2);
 
   --hero-heading: clamp(3.5rem, 8vw, 5rem);
   --paragraph-text: 0.9rem;

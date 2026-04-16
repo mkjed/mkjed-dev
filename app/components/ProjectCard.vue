@@ -58,7 +58,7 @@ import Label from "./Label.vue";
 .project-card {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  border: 1px solid rgba(139, 138, 138, 0.2);
+  border: solid var(--border);
   border-width: 1px 0 1px 0;
   transition: background-color 0.3s ease-out;
   font-size: var(--paragraph-text);

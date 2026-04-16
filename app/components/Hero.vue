@@ -14,26 +14,28 @@ const linkList = ref([
 
 <template>
   <section class="hero">
-    <div class="content">
-      <h1>Junior Web Developer</h1>
-      <h2>Michael<span>Jedrzejczyk</span></h2>
-      <p>
-        Web Developer spezialisiert auf moderne Web-Technologien. Ich entwickle
-        benutzerfreundliche, skalierbare Lösungen mit Fokus auf Performance und
-        Design.
-      </p>
-      <ul class="contacts">
-        <li v-for="link in linkList">
-          <a
-            class="nLink"
-            :href="link.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            >{{ link.title }}</a
-          >
-        </li>
-      </ul>
-    </div>
+    <Transition name="fade" appear>
+      <div class="content">
+        <h1>Junior Web Developer</h1>
+        <h2>Michael<span>Jedrzejczyk</span></h2>
+        <p>
+          Web Developer spezialisiert auf moderne Web-Technologien. Ich
+          entwickle benutzerfreundliche, skalierbare Lösungen mit Fokus auf
+          Performance und Design.
+        </p>
+        <ul class="contacts">
+          <li v-for="link in linkList">
+            <a
+              class="nLink"
+              :href="link.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ link.title }}</a
+            >
+          </li>
+        </ul>
+      </div>
+    </Transition>
   </section>
 </template>
 
@@ -56,6 +58,7 @@ const linkList = ref([
 }
 
 .content > p {
+  max-width: 28rem;
   color: var(--accent);
   font-size: var(--paragraph-text);
 }
@@ -80,5 +83,15 @@ h2 {
 .contacts {
   display: flex;
   column-gap: 1rem;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.8s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

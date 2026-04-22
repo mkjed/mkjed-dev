@@ -26,9 +26,9 @@ const infoCardContent: InfoCard[] = [
       <p class="section-title">01 / About</p>
       <div class="right-col">
         <p>
-          Ich bin ausgebildeter Mediengestalter und Fachinformatiker für
-          Anwendungsentwicklung, ich entwickle und gestalte Webanwendungen mit
-          modernen Libraries und Frameworks, JavaScript und CSS. Mir liegen
+          Ich bin ausgebildeter Fachinformatiker für Anwendungsentwicklung und
+          gelernter Mediengestalter, ich entwickle und gestalte Webanwendungen
+          mit modernen Libraries und Frameworks, JavaScript und CSS. Mir liegen
           Leistung, Barrierefreiheit und die Gestaltung von Benutzeroberflächen
           besonders am Herzen.
         </p>

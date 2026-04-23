@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     },
   },
   app: {
-    baseURL: '/mkjed-dev/',
+    baseURL: "/",
     head: {
       title: "Michael Jedrzejczyk | Junior Frontend Developer",
       htmlAttrs: {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ProjectCard from "./ProjectCard.vue";
 import { ref } from "vue";
+import ProjectCard from "./ProjectCard.vue";
 const projects = ref([
   {
     id: "01",
@@ -10,11 +10,11 @@ const projects = ref([
     labels: ["React", "JavaScript", "Tailwind", "Vite", "i18n"],
     links: [
       {
-        url: "https://gitlab.com/mkjed/bewerbase",
+        url: "https://github.com/mkjed/bewerbase-app",
         title: "code",
       },
       {
-        url: "https://bewerbase-f79fff.gitlab.io/",
+        url: "https://mkjed.github.io/bewerbase-app/",
         title: "demo",
       },
     ],

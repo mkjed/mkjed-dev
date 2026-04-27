@@ -2,8 +2,8 @@
 import { ref } from "vue";
 const linkList = ref([
   {
-    url: "https://gitlab.com/users/mkjed/projects",
-    title: "gitlab",
+    url: "https://github.com/mkjed",
+    title: "github",
   },
   {
     url: "https://www.linkedin.com/in/mjlinked-in",

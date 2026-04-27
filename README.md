@@ -5,5 +5,3 @@ To get it running just do:
 `yarn install`
 
 `yarn dev`
-
-Moved from GitLab: https://gitlab.com/mkjed/bewerbase
